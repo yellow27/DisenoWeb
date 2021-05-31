@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta </title>
+
+</head>
+<body>
+    <div id="contenedor" style="width: 1300px; margin: 100px;">
+    <h2>ENCUESTA 2021</h2>
+    <form action="a.php" method="post">
+        <div >
+        <fieldset style="line-height: 2;">
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombres:</label>&nbsp;&nbsp;
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="apellido">Apellidos:</label>&nbsp;
+            <input type="text" id="apellido" name="apellido"><br>
+            <label for="dni">DNI:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="dni" pattern="^[0-9]{8}" name="dni" size="5px"><br>
+            <label for="edad">Edad: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="edad" pattern="^[1-9][0-9]?$" name="edad" size="5px"><br>
+            <label for="sexo">Sexo: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="sexo" id="sexo">
+                <option disabled selected value> ... </option>
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+            </select><br>
+        </fieldset>
+        </div>
+        <br>
+        <div style="background-color: rgb(255, 234, 234);">
+        <fieldset style="line-height: 2;">
+            <legend>Libros favoritos</legend>
+            <input type="radio" name="libro" value="l1">Libro 01<br>
+            <input type="radio" name="libro" value="l2">Libro 02<br>
+            <input type="radio" name="libro" value="l3">Libro 03<br>
+            <input type="radio" name="libro" value="l2">Libro 04<br>
+            <input type="radio" name="libro" value="l3">Libro 05<br>
+        </fieldset>
+        </div>
+        <br>
+        <div style="background-color: rgb(227, 238, 227);">
+        <fieldset style="line-height: 2;">
+            <legend>Selecciona el libro que deseas leer</legend>
+            <input type="checkbox" name="libro_no" value="ln1">Libro 01</input><br>
+            <input type="checkbox" name="libro_no" value="ln2">Libro 02</input><br>
+            <input type="checkbox" name="libro_no" value="ln3">Libro 03</input><br>
+            <input type="checkbox" name="libro_no" value="ln4">Libro 04</input><br>
+            <input type="checkbox" name="libro_no" value="ln5">Libro 05</input><br>
+        </fieldset>
+        </div>
+        <br>
+        <div style="background-color: rgb(227, 238, 227);">
+        <fieldset>
+            <legend>Argumento de la Libro que más te gusta</legend>
+            <textarea name="reseña" id="reseña" cols="50" rows="5" style="width: 900px;"></textarea>
+        </fieldset>
+        </div>
+        <br>
+        <input type="reset" value="Borrar Formulario" style="margin: 30px;"><input type="submit" value="Enviar">
+    </form>
+    </div>
+</body>
+</html>

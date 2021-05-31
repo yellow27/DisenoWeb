@@ -1,0 +1,16 @@
+#cajita1{
+    background-color: aquamarine;
+    width: 10%;
+    height: 130px;
+    padding: 10px;
+}
+
+#botoncito1{
+    background-color: black;
+    color: blanchedalmond;
+    width: 150px;
+}
+
+#cajita1 li{
+    list-style: none;
+}
